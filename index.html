@@ -275,6 +275,8 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script>
       (function(apiKey){
           (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
@@ -282,39 +284,35 @@
               o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
               y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
               z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
-
+      
               // This function creates visitors and accounts in Pendo
-    // You will need to replace <visitor-id-goes-here> and <account-id-goes-here> with values you use in your app
-    // Please use Strings, Numbers, or Bools for value types.
-    pendo.initialize({
-        visitor: {
-            id:              1231231312 // Required if user is logged in
-            // email:        // Recommended if using Pendo Feedback, or NPS Email
-            // full_name:    // Recommended if using Pendo Feedback
-            // role:         // Optional
-
-            // You can add any additional visitor level key-values here,
-            // as long as it's not one of the above reserved names.
-        },
-
-        account: {
-            id:              213122222223 // Highly recommended, required if using Pendo Feedback
-            // name:         // Optional
-            // is_paying:    // Recommended if using Pendo Feedback
-            // monthly_value:// Recommended if using Pendo Feedback
-            // planLevel:    // Optional
-            // planPrice:    // Optional
-            // creationDate: // Optional
-
-            // You can add any additional account level key-values here,
-            // as long as it's not one of the above reserved names.
-        }
-    });
-              
+              // You will need to replace <visitor-id-goes-here> and <account-id-goes-here> with values you use in your app
+              // Please use Strings, Numbers, or Bools for value types.
+              pendo.initialize({
+                  visitor: {
+                      id:              <visitor-id-goes-here> // Required if user is logged in
+                      // email:        // Recommended if using Pendo Feedback, or NPS Email
+                      // full_name:    // Recommended if using Pendo Feedback
+                      // role:         // Optional
+      
+                      // You can add any additional visitor level key-values here,
+                      // as long as it's not one of the above reserved names.
+                  },
+      
+                  account: {
+                      id:              <account-id-goes-here> // Highly recommended, required if using Pendo Feedback
+                      // name:         // Optional
+                      // is_paying:    // Recommended if using Pendo Feedback
+                      // monthly_value:// Recommended if using Pendo Feedback
+                      // planLevel:    // Optional
+                      // planPrice:    // Optional
+                      // creationDate: // Optional
+      
+                      // You can add any additional account level key-values here,
+                      // as long as it's not one of the above reserved names.
+                  }
+              });
       })('0ac7d5ed-1726-4dba-4fb7-cf7be8b6fc2b');
       </script>
-      
-  
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
 </html>
